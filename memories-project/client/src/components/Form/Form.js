@@ -7,18 +7,14 @@ import { createPost, updatePost } from '../../actions/posts';
 import useStyles from './styles';
  
 const Form = ({ currentId, setCurrentId }) => {
-    const [postData, setPostData] = useState({
-        creator: '', title: '', message: '', tags: '', selectedFile: ''
-    });
-
-    const classes = useStyles();
-    const dispatch = useDispatch();
+    const [postData, setPostData] = useState({ creator: '', title: '', message: '', tags: '', selectedFile: '' });
     const post = useSelector((state) => currentId ? state.posts.find((p) => p._id === currentId) : null );
+    const classes = useStyles();
+    const dispatch = useDispatch();    
 
     useEffect(() => {
         if(post) setPostData(post);
     }, [post])
-
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -31,11 +27,10 @@ const Form = ({ currentId, setCurrentId }) => {
         clear();
     }
 
-    const clear = () => {
-        setCurrentId(null);
+    const clear = () => {        
         setPostData({ creator: '', title: '', message: '', tags: '', selectedFile: '' });
+        setCurrentId(null);                //This line does not work.
     }
-
 
     return (
         <Paper className={classes.paper}>

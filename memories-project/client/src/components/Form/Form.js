@@ -20,9 +20,9 @@ const Form = ({ currentId, setCurrentId }) => {
         e.preventDefault();
 
         if (currentId) {
-            dispatch(updatePost(currentId, postData));
+            dispatch(updatePost(currentId, postData));            
         } else {
-            dispatch(createPost(postData));
+            dispatch(createPost(postData));           
         }
         clear();
     }

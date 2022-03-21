@@ -14,7 +14,7 @@ const Hero = (props) => (
       <SectionText>
       Welcome to my portfolio React Application. I am an aspiring software engineer - I have been hooked up on IT for quite some time now and this portfolio is here to help me showcase my learning progress.  
       </SectionText>
-      <Button onClick={() => window.location = 'https://google.com'}>
+      <Button onClick={() => window.location = "#about"}>
         Learn More
       </Button>
     </LeftSection>

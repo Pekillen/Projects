@@ -10,7 +10,7 @@ export const projects = [
   },
   {
     title: 'E-Commerce',
-    description:"Building an E-Commerce project in order to get a hands-on experience and practical skills used in Full-Stack developement job. Using React & JavaScript in order to learn advanced topics, as well as how to use Stripe for card transactions.",
+    description:"Building an E-Commerce project to get a hands-on experience and practical skills used in the industry. Exploring React & JavaScript to learn advanced topics, gain experience, as well as to get acquainted with Stripe for card transactions. The Project helped to get experience.",
     image: '/images/2.png',
     tags: ['React', 'JavaScript'],
     source: 'https://google.com',

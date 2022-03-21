@@ -1,5 +1,5 @@
 import React from 'react';
-import { DiFirebase, DiReact, DiZend } from 'react-icons/di';
+import { DiFirebase, DiReact, DiMysql } from 'react-icons/di';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
 
@@ -17,7 +17,7 @@ const Technologies = () =>  (
           <ListTitle>Front-End</ListTitle>
           <ListParagraph>
             Experience with <br />
-            React.js
+            JS & React.js 
           </ListParagraph>
         </ListContainer>
       </ListItem>
@@ -27,19 +27,19 @@ const Technologies = () =>  (
           <ListTitle>Back-End</ListTitle>
           <ListParagraph>
             Experience with <br />
-            Node.js
+            Node & Express
           </ListParagraph>
         </ListContainer>
       </ListItem>
       <ListItem>
-        <DiZend size="3rem" />
+        <DiMysql size="3rem" />
         <ListContainer>
-          <ListTitle>UI/UX</ListTitle>
+          <ListTitle>Other</ListTitle>
           <ListParagraph>
-            Experience with <br />
-            React.js
+            Knowledge of <br />
+            Git & SQL 
           </ListParagraph>
-        </ListContainer>
+        </ListContainer>        
       </ListItem>
     </List>
   </Section>

@@ -20,7 +20,7 @@ const Footer = () => {
       </LinkList>
       <SocialIconsContainer>
         <CompanyContainer>
-          <Slogan>Innovating a project - GOOD!</Slogan>
+          <Slogan>Contact me via E-mail or Phone or visit my Social Media! <br /> I would love to get in touch with you!</Slogan>
         </CompanyContainer>
         <SocialContainer>
           <SocialIcons href="https://github.com/Pekillen/Projects">

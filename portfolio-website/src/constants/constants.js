@@ -19,8 +19,8 @@ export const projects = [
   },  
   {
     title: 'Portfolio',
-    description: "Building this Portfolio.",
-    image: '/images/1.png',
+    description: "Building this Portfolio allowed me to revisit and reapply concepts and technics I discovered and learned during preparation of the previous Projects. This is a summury of the work that I have done and a sort of a business-card.",
+    image: '/images/3.png',
     tags: ['React', 'JavaScript', 'HTML'],
     source: 'https://google.com',
     visit: 'https://google.com',

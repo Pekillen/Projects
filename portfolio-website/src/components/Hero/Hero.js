@@ -9,10 +9,10 @@ const Hero = (props) => (
     <LeftSection>
       <SectionTitle main center>
         Velkommen!<br />
-        My name is Peter.     
+        My name is Piotr.     
       </SectionTitle>
       <SectionText>
-      Welcome to my portfolio application. I am an aspiring software engineer. Among my interests there are: Music, Languages and Science, but for some time now I am hooked up on IT! 
+      Welcome to my portfolio React Application. I am an aspiring software engineer - I have been hooked up on IT for quite some time now and this portfolio is here to help me showcase my learning progress.  
       </SectionText>
       <Button onClick={() => window.location = 'https://google.com'}>
         Learn More

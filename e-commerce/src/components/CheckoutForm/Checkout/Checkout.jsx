@@ -8,9 +8,10 @@ import { commerce } from '../../../lib/commerce';
 
 const steps = ['Shipping address', 'Payment details'];
 
-const Checkout = ({ cart }) => {
+const Checkout = ({ cart, order, onCaptureCheckout, error }) => {
     const classes = useStyles();
     const [activeStep, setActiveStep] = useState(0);
+    const [shippingData, setShippingData] = useState({});
     const [checkoutToken, setCheckoutToken] = useState(null);
 
     useEffect(() => {
@@ -27,6 +28,15 @@ const Checkout = ({ cart }) => {
         generateToken();
     }, [cart]);
 
+    const nextStep = () => setActiveStep((prevActiveStep) => prevActiveStep + 1);
+    const backStep = () => setActiveStep((prevActiveStep) => prevActiveStep - 1);
+
+    const next = (data) => {
+        setShippingData(data);
+
+        nextStep();
+    }
+
     const Confirmation = () => (
         <div>
             Confirmation
@@ -34,8 +44,8 @@ const Checkout = ({ cart }) => {
     );
 
     const Form = () => (activeStep === 0 
-        ? <AddressForm checkoutToken={checkoutToken} />
-        : <PaymentForm />);
+        ? <AddressForm checkoutToken={checkoutToken} next={next} />
+        : <PaymentForm shippingData={shippingData} checkoutToken={checkoutToken} backStep={backStep} onCaptureCheckout={onCaptureCheckout} nextStep={nextStep} />);
 
     
 

@@ -13,24 +13,25 @@ const Form = ({ currentId, setCurrentId }) => {
     const dispatch = useDispatch();    
 
     useEffect(() => {
-        if(post) setPostData(post);
+        if (post) setPostData(post);
     }, [post])
 
-    const handleSubmit = (e) => {
+    const clear = () => {        
+        setCurrentId(0);  
+        setPostData({ creator: '', title: '', message: '', tags: '', selectedFile: '' });                     
+    }
+
+    const handleSubmit = async (e) => {
         e.preventDefault();
 
-        if (currentId) {
-            dispatch(updatePost(currentId, postData));            
-        } else {
-            dispatch(createPost(postData));           
-        }
-        clear();
-    }
-
-    const clear = () => {        
-        setPostData({ creator: '', title: '', message: '', tags: '', selectedFile: '' });
-        setCurrentId(null);                //This line does not work.
-    }
+        if (currentId === 0) {
+            dispatch(createPost(postData));  
+            clear();                        
+        } else {            
+            dispatch(updatePost(currentId, postData));   
+            clear();      
+        }        
+    }    
 
     return (
         <Paper className={classes.paper}>

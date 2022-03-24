@@ -1,29 +1,29 @@
 export const projects = [
   {
     title: 'MERN Memories',
-    description: `Building a project using React, Node.js, Express & MongoDB. Learning how to build a Full Stack MERN Application from start to finish and digging into the details of applied technologies. The App is called Memories - it is a tool that allows to post "Postcards" that help to cheerish important moments.`,
+    description: `Building a project using React, Node.js, Express & MongoDB. Learning how to build a Full Stack MERN Application from start to finish and digging into the details of applied technologies. The Application is called Memories - it is a tool that allows to post "Postcards" that help to cheerish important moments.`,
       image: '/images/1.png',
       tags: ['Mongo', 'Express', 'React', 'Node'],
-    source: 'https://google.com',
-    visit: 'https://google.com',
+    source: 'https://github.com/Pekillen/Projects/tree/main/memories-project',
+    visit: 'https://memories-project-1997.netlify.app/',
     id: 0,
   },
   {
     title: 'E-Commerce',
-    description:"Building an E-Commerce project to get a hands-on experience and practical skills used in the industry. Exploring React & JavaScript to learn advanced topics, gain experience, as well as to get acquainted with Stripe for card transactions. The Project helped to get experience.",
+    description:"Building an E-Commerce project to get a hands-on experience and practical skills used in the industry. Exploring React & JavaScript to learn advanced topics, and gain experience precisely where it is recquired. The projects was completed using commerce.js for backend and Stripe for card transactions.",
     image: '/images/2.png',
     tags: ['React', 'JavaScript'],
-    source: 'https://google.com',
-    visit: 'https://google.com',
+    source: 'https://github.com/Pekillen/Projects/tree/main/e-commerce',
+    visit: 'https://youronlineshop.netlify.app/',
     id: 1,
   },  
   {
     title: 'Portfolio',
     description: "Building this Portfolio allowed me to revisit and reapply concepts and technics I discovered and learned during preparation of the previous Projects. This is a summury of the work that I have done and a sort of a business-card.",
     image: '/images/3.png',
-    tags: ['React', 'JavaScript', 'HTML'],
-    source: 'https://google.com',
-    visit: 'https://google.com',
+    tags: ['React', 'JavaScript', 'HTML'],  
+    source: 'https://github.com/Pekillen/Projects/tree/main/portfolio-website',
+    visit: 'https://piotrkwiatkowski.netlify.app/',
     id: 2,
   }
 ];

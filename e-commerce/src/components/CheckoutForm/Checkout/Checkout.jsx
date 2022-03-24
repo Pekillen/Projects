@@ -18,17 +18,26 @@ const Checkout = ({ cart, order, onCaptureCheckout, error }) => {
     const navigate = useNavigate();
 
     useEffect(() => {
+      const abortCont = new AbortController(); // Line 29 & 38 
+
         const generateToken = async () => {
             try {
                 const token = await commerce.checkout.generateToken(cart.id, { type: 'cart' });
 
                 setCheckoutToken(token);
             } catch (error) {
+              if (error === 'AbortError'){
+                console.log('Fetch was aborted')
+              }
                 navigate('/');
             }
-        }
-
-        generateToken();
+        }  
+        generateToken();  
+        
+        return () => {
+          abortCont.abort();           // Introduced useEffect Cleanup, because it was throwing errors to the console.
+         }
+        
     }, [cart]);
 
     const nextStep = () => setActiveStep((prevActiveStep) => prevActiveStep + 1);

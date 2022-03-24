@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { commerce } from './lib/commerce'; //Library for backend using commerce.js
-import { Products, Navbar, Cart, Checkout } from './components';
+import { Products, Navbar, Cart, Checkout, Home } from './components';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
@@ -9,6 +9,11 @@ const App = () => {
     const [cart, setCart] = useState({});
     const [order, setOrder] = useState({});
     const [errorMessage, setErrorMessage] = useState('');
+    const [enterShop, setEnterShop] = useState(true);
+
+    const comeIn = () => {
+        setEnterShop(true);
+    }
 
     const fetchProducts = async () => {
         const { data } = await commerce.products.list();
@@ -64,9 +69,9 @@ const App = () => {
     useEffect(() => {
         fetchProducts();
         fetchCart();
-    }, []) 
+    }, [])     
 
-    return (
+    return ( enterShop ? (
         <Router>
             <div> 
                 <Navbar totalItems={cart.total_items}/>
@@ -80,9 +85,11 @@ const App = () => {
                         handleEmptyCart={handleEmptyCart}
                     />} />    
                     <Route path='/checkout' element={<Checkout cart={cart} order={order} onCaptureCheckout={handleCaptureCheckout} error={errorMessage} />} />
-                </Routes>            
+                </Routes>                                
             </div>
-        </Router>
+        </Router> ) : (
+            <Home comeIn={comeIn} />
+        )
     )
 }
 

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { InputLabel, Select, MenuItem, Button, Grid, Typography } from '@material-ui/core';
+import { InputLabel, Select, MenuItem, Button, Grid, Typography, CircularProgress } from '@material-ui/core';
 import { useForm, FormProvider } from 'react-hook-form';
 import { Link } from 'react-router-dom';
 import { commerce } from '../../lib/commerce';
@@ -52,10 +52,9 @@ const AddressForm = ({ checkoutToken, next }) => {
 
     useEffect(() => {
         if(shippingSubdivision) fetchShippingOptions(checkoutToken.id, shippingCountry, shippingSubdivision);
-    }, [shippingSubdivision]);
+    }, [shippingSubdivision]);        
 
-
-  return (
+  return ( shippingOption !== '' ? (
     <>
         <Typography variant="h6" gutterBottom>Shipping Address</Typography>    
         <FormProvider {...methods}>
@@ -105,8 +104,12 @@ const AddressForm = ({ checkoutToken, next }) => {
                 </div>
             </form>
         </FormProvider>
-    </>
+    </> ) : (
+        <div display="flex" align="center">
+          <CircularProgress />
+        </div>
+      )
   )
 }
 
-export default AddressForm
+export default AddressForm;

@@ -7,7 +7,7 @@ This is a repository for my portfolio projects.
 Contains a source code for my portfolio website. In the project, there are links included to the source code and other apps.
 You can visit the App by clicking the icon below!
 
-[<img alt="App" width="24px" src="https://flyclipart.com/thumb2/portfolio-icons-download-free-png-and-vector-icons-unlimited-186409.png" />][portfolio].
+[<img align="left" alt="App" width="48px" src="https://icon-library.com/images/portfolio-icon/portfolio-icon-0.jpg" />][portfolio].
 
 ### memories-app:
 

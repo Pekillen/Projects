@@ -6,8 +6,7 @@ This is a repository for my portfolio projects.
 
 Contains a source code for my portfolio website. In the project, there are links included to the source code and other apps.
 You can visit the App by clicking the icon below!
-
-[<img align="left" alt="App" width="48px" src="https://travisty12.github.io/resort/img/visit.png" />][portfolio].
+[portfolio].
 
 ### memories-app:
 

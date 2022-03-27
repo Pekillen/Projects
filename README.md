@@ -5,8 +5,8 @@ This is a repository for my portfolio projects.
 ### portfolio-website: 
 
 Contains a source code for my portfolio website. In the project, there are links included to the source code and other apps.
-You can visit the App by clicking the icon below!
-[portfolio].
+You can visit the App by clicking [this link!]
+
 
 ### memories-app:
 
@@ -22,4 +22,4 @@ Is an app of an online shop. The app was created to get hands-on experience in p
 ### Please feel free to explore and conntact me if you wish to leave feedback!
 
 
-[portfolio]: https://piotrkwiatkowski.netlify.app
+[this link!]: https://piotrkwiatkowski.netlify.app

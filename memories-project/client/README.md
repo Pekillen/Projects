@@ -1,6 +1,11 @@
-# Getting Started with Create React App
+# Client side
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+In this repository you can find client side code for the MERN-memories project.
+
+In the latest commit there was authentification added so in order to like or add posts you will have to set up an account or login with google auth.
+
+Feel free to do so! 
+
 
 ## Available Scripts
 

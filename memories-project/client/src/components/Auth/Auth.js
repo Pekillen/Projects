@@ -7,27 +7,37 @@ import Icon from './icon';
 import Lock from '@material-ui/icons/Lock';
 import useStyles from './styles';
 import Input from './Input';
+import { signin, signup } from '../../actions/auth';
+
+const initialState = { firstName: '', lastName: '', email: '', password: '', confirmPassword: '' };
 
 const Auth = () => {
     const classes = useStyles();
     const [showPassword, setShowPassword] = useState(false);
     const [isSignup, setIsSingup] = useState(false);
+    const [formData, setFormData] = useState(initialState);
     const dispatch = useDispatch();
     const navigate = useNavigate();
 
     const handleShowPassword = () => setShowPassword((prevShowPassword) => !prevShowPassword);
 
-    const handleSubmit = () => {
+    const handleSubmit = (e) => {
+        e.preventDefault();
 
+        if(isSignup) {
+            dispatch(signup(formData, navigate))
+        } else {
+            dispatch(signin(formData, navigate))
+        }
     };
 
-    const handleChange = () => {
-
+    const handleChange = (e) => {
+        setFormData({ ...formData, [e.target.name]: e.target.value });
     };
 
     const switchMode = () => {
         setIsSingup(!isSignup);
-        handleShowPassword(false);
+        setShowPassword(false);
     };
 
     const googleSuccess = (res) => {        
@@ -81,7 +91,7 @@ const Auth = () => {
                 onFailure={googleFailure}
                 cookiePolicy="single_host_origin"
                 />
-                <Grid container justify="flex-end">
+                <Grid container justifyContent="flex-end">
                     <Grid item>
                         <Button onClick={switchMode}>
                             { isSignup ? 'Already have an account? Sign In!' : "Don't have an account? Sign Up!"}

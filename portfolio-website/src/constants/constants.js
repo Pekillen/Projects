@@ -12,20 +12,20 @@ export const projects = [
     title: 'E-Commerce',
     description:"Building an E-Commerce project to get a hands-on experience and practical skills used in the industry. Exploring React & JavaScript to learn advanced topics, and gain experience precisely where it is recquired. The projects was completed using commerce.js for backend and Stripe for card transactions.",
     image: '/images/2.png',
-    tags: ['React', 'JavaScript'],
+    tags: ['React', 'JavaScript', 'Stripe'],
     source: 'https://github.com/Pekillen/Projects/tree/main/e-commerce',
-    visit: 'https://youronlineshop.netlify.app/',
+    visit: 'https://hikingshopnet.netlify.app/',
     id: 1,
   },  
-  {
-    title: 'Portfolio',
-    description: "Building this Portfolio allowed me to revisit and reapply concepts and technics I discovered and learned during preparation of the previous Projects. This is a summury of the work that I have done and a sort of a business-card.",
-    image: '/images/3.png',
-    tags: ['React', 'JavaScript', 'HTML'],  
-    source: 'https://github.com/Pekillen/Projects/tree/main/portfolio-website',
-    visit: 'https://piotrkwiatkowski.netlify.app/',
-    id: 2,
-  }
+  // {
+  //   title: 'Portfolio',
+  //   description: "Building this Portfolio allowed me to revisit and reapply concepts and technics I discovered and learned during preparation of the previous Projects. This is a summury of the work that I have done and a sort of a business-card.",
+  //   image: '/images/3.png',
+  //   tags: ['React', 'JavaScript', 'CSS'],  
+  //   source: 'https://github.com/Pekillen/Projects/tree/main/portfolio-website',
+  //   visit: 'https://piotrkwiatkowski.netlify.app/',
+  //   id: 2,
+  // }
 ];
 
 export const TimeLineData = [

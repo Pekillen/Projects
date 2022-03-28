@@ -41,6 +41,7 @@ const PaymentForm = ({ shippingData, checkoutToken, backStep, onCaptureCheckout,
         <Review checkoutToken={checkoutToken}/> 
         <Divider />
         <Typography variant="h6" gutterBottom style={{ margin: '20px 0' }}>Payment Method</Typography> 
+        <Typography variant="p" style={{ color: 'red', padding: '10px 0px' }}><hr />This is a test-website, not a real shop! Please do not enter your card data here.<hr /></Typography> <br /> 
         <Elements stripe={stripePromise}>
             <ElementsConsumer>
                 {({ elements, stripe }) => (

@@ -1,6 +1,8 @@
 # E-Commerce
-This project is an online shop. It was created using React for front-end and commerce.js for back-end.
+This project is an online hiking shop project. It was created using React for front-end and commerce.js for back-end.
 The project has also Stripe included in order to handle payment.
+
+Please note that stripe is currently not active due to Payment Gateway being disabled for safety. However you can try to go through the payment process and enter mock card number like: 4242 4242 4242 4242 in order to get an error at last step of the checkout. 
 
 ## Most Important Scripts
 

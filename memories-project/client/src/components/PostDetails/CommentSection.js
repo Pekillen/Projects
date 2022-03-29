@@ -16,7 +16,7 @@ const CommentSection = ({ post }) => {
   const handleComment = async () => {
     const finalComment = `${user.result.name}: ${comment}`;
     
-    const newComments = await dispatch(commentPost(finalComment, post._id)); //Throws undefined as the first instance
+    const newComments = await dispatch(commentPost(finalComment, post._id)); 
     
     setComments(newComments);  
     setComment('');

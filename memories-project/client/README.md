@@ -1,10 +1,23 @@
 # Client side
 
-In this repository you can find client side code for the MERN-memories project.
+In this repository, you can find client-side code for the CRUD (Create, Read, Update, Delete), MERN-memories project.
 
-In the latest commit there was authentification added so in order to like or add posts you will have to set up an account or login with google auth.
+The front-end was mainly built using React.js and Material-UI. However, there are a few other libraries used in the project (eg. Redux, Axios).
 
-Feel free to do so! 
+Feel free to go through the code and leave me a review!
+
+Would love to hear feedback!
+
+
+# Server side
+
+The server-side was built mainly using Node.js, Express, however, here as well other libraries were in use as well. MongoDB was used for Database management and the App was built and deployed using Heroku.
+
+The Projects allowed me to dig into the back-end structure, get acquainted, and allowed me to understand how one should interact with it.
+
+Here also feel free to review the code!
+
+I am always eager to learn and expand my horizons!
 
 
 ## Available Scripts

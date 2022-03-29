@@ -14,17 +14,15 @@ const CommentSection = ({ post }) => {
   const commentsRef = useRef();
 
   const handleComment = async () => {
-    const newComments = await dispatch(commentPost(`${user.result.name}: ${comment}`, post._id));
+    const finalComment = `${user.result.name}: ${comment}`;
     
-    setComments(newComments);
+    const newComments = await dispatch(commentPost(finalComment, post._id)); //Throws undefined as the first instance
+    
+    setComments(newComments);  
     setComment('');
 
     commentsRef.current.scrollIntoView({ behavior: 'smooth' });
-  };
-
-  useEffect(() => {
-    if (comment) setComments([...comments, comment]);
-}, []);
+  }; 
 
   return (
     <div>

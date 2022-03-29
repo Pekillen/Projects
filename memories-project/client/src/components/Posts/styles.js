@@ -11,4 +11,12 @@ export default makeStyles((theme) => ({
     actionDiv: {
         textAlign: 'center',
     },
+    brandContainer: {
+        display: 'flex',
+        alignItems: 'center',
+    },
+    image: {
+    marginLeft: '10px',
+    marginTop: '5px',
+    },
 }));

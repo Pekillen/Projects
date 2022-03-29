@@ -1,6 +1,8 @@
 import React from 'react';
-import { Grid, CircularProgress } from '@material-ui/core';
+import { Grid, CircularProgress, Typography } from '@material-ui/core';
 import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
+import nothing from '../../images/nothing.jpg';
 
 import Post from './Post/Post.js';
 
@@ -10,7 +12,18 @@ const Posts = ({ setCurrentId }) => {
     const { posts, isLoading } = useSelector((state) => state.posts);
     const classes = useStyles();  
 
-    if(!posts.length && !isLoading) return 'No posts to display';
+    if(!posts.length && !isLoading) return (        
+            <div>
+                <Link to="/" >
+                    <div class="container" style={{display: 'flex', justifyContent: 'center'}}>
+                        <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
+                        <img src={nothing} alt="Nothing to see here..." />
+                        <Typography variant="h3">Oops! No posts to display</Typography>
+                        </div>
+                    </div>
+                </Link>
+            </div>        
+    );
 
     return (
         isLoading ? <div style={{display: 'flex', justifyContent: 'center'}}><CircularProgress color='primary' size="7em" /></div> : (

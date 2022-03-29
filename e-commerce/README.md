@@ -4,6 +4,11 @@ The project has also Stripe included in order to handle payment.
 
 Please note that stripe is currently not active due to Payment Gateway being disabled for safety. However you can try to go through the payment process and enter mock card number like: 4242 4242 4242 4242 in order to get an error at last step of the checkout. 
 
+The project is going to receive a few visual touch-ups in the near future (eg. a dedicated Front-Page design).
+
+Please stay tuned to see the changes! 
+
+
 ## Most Important Scripts
 
 The most important scripts for this project:

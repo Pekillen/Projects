@@ -5,10 +5,10 @@ import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './Techn
 
 const Technologies = () =>  (
   <Section id="tech">
-    <SectionDivider />
+    <SectionDivider divider/>
     <SectionTitle>Technologies</SectionTitle>
     <SectionText>
-      I have worked with a range of Technologies:
+      I have worked with a range of IT Technologies:
     </SectionText>
     <List>
       <ListItem>

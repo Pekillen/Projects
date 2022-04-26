@@ -3,6 +3,9 @@ import React, { useState, useRef, useEffect } from 'react';
 import { CarouselButton, CarouselButtonDot, CarouselButtons, CarouselContainer, CarouselItem, CarouselItemImg, CarouselItemText, CarouselItemTitle, CarouselMobileScrollNode } from './TimeLineStyles';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import { TimeLineData } from '../../constants/constants';
+import Button from '../../styles/GlobalComponents/Button';
+
+
 
 const TOTAL_CAROUSEL_COUNT = TimeLineData.length;
 
@@ -31,6 +34,7 @@ const Timeline = () => {
       setActiveItem(index);
     }
   }
+ 
 
   // snap back to beginning of scroll when window is resized
   // avoids a bug where content is covered up if coming from smaller screen
@@ -44,12 +48,17 @@ const Timeline = () => {
 
   return (
     <Section id="about">
-      <SectionTitle>About Me</SectionTitle>
+      <SectionDivider divider />
+      <SectionTitle>About Me</SectionTitle>     
       <SectionText>
-        My name is Piotr Kwiatkowski. I was acquainted with programming concepts during my studies, but it wasn't until recently, that I got inspired to pursue competencies in the world of IT. <br />
-        I aspire to become a Software Engineer. I am working towards this goal by learning Web Development tools and techniques. Apart from that I am researching and learning topics connected to Computer Science and learning Norwegian, as I recently moved to Norway with my girlfriend. <br />
-        In my free time, I like playing guitar, listening to music, running, and going for long walks to admire beautiful Norwegian landscapes.
+        My name is Piotr Kwiatkowski. I am living in Sandefjord, Norway. In my free time, I like playing guitar, listening to music, and doing sports. I am always full of positive energy! I am always eager to go the extra mile and learn something new. <br />
+        I acquired education in the fields of Mechanical Engineering, Applied Computer Science & Bussines, and Entrepreneurship. I possess comprehensive knowledge and broad experience in a wide range of fields and topics and I have had an amazing opportunity to gain experience working in international, diverse teams of talented individuals in the fields of engineering, business, and logistics.  <br />
+        However, I think that my most valuable qualities are the ability to adapt and learn new subjects quickly and my interpersonal skills, which allow me to build strong lasting connections and relationships. <br />
+        I am always looking to expand my competencies! I would love to get in touch with you to discuss how our cooperation could benefit you!  <br />       
       </SectionText>
+      <a href='/images/CV.pdf' download="Piotr Kwiatkowski CV.pdf">
+        <Button>Download CV</Button>
+      </a>  
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
           {TimeLineData.map((item, index) => (
@@ -69,11 +78,11 @@ const Timeline = () => {
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
+                      fillRule="evenodd"
+                      clipRule="evenodd"
                       d="M2.5 5.5C3.88071 5.5 5 4.38071 5 3V3.5L208 3.50002V2.50002L5 2.5V3C5 1.61929 3.88071 0.5 2.5 0.5C1.11929 0.5 0 1.61929 0 3C0 4.38071 1.11929 5.5 2.5 5.5Z"
                       fill="url(#paint0_linear)"
-                      fill-opacity="0.33"
+                      fillOpacity="0.33"
                     />
                     <defs>
                       <linearGradient
@@ -83,11 +92,11 @@ const Timeline = () => {
                         x2="208"
                         y2="0.500295"
                         gradientUnits="userSpaceOnUse">
-                        <stop stop-color="white" />
+                        <stop stopColor="white" />
                         <stop
                           offset="0.79478"
-                          stop-color="white"
-                          stop-opacity="0"
+                          stopColor="white"
+                          stopOpacity="0"
                         />
                       </linearGradient>
                     </defs>

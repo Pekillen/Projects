@@ -35,8 +35,8 @@ const App = () => {
 
       <div className="px-4 py-2 justify-center items-center bg-primary flex-col text-center banner04">
         <p className={`${styles.pText} ${styles.whiteText}`}>This site was made by {" "}
-        <span className="bold">Peter</span>
-        {" "} as part of the JavaScript Mastery course.
+        <span className="bold">Pekillen</span>
+        {" "} as a showcase for React Native App.
         </p>
       </div>
     </>

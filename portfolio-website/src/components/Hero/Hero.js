@@ -8,11 +8,11 @@ const Hero = (props) => (
   <Section row nopadding>
     <LeftSection>
       <SectionTitle main center>
-        Velkommen!<br />
-        My name is Piotr.     
+        Welcome!<br />  
+        My name is Piotr      
       </SectionTitle>
       <SectionText>
-      Welcome to my portfolio React Application. I am an aspiring software engineer - I have been hooked up on IT for quite some time now and this portfolio is here to help me showcase my learning progress.  
+        I created this website to give you a chance to get to know me a little better. I am a young, energetic, and open-minded person who is looking for opportunities to further develop myself. Discover how well we fit together!
       </SectionText>
       <Button onClick={() => window.location = "#about"}>
         Learn More

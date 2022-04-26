@@ -17,14 +17,23 @@ export const projects = [
     visit: 'https://hikingshopnet.netlify.app/',
     id: 1,
   },  
+  {
+    title: 'Native App',
+    description: "Building React Native App to get acquainted with React Native Technics and deployment of React Native Apps. Working on the App allowed an understanding of how the mobile Native Apps are made. Working on both the Native App and the Showcase site also helped me to get better at styling (for the Showcase Website Bootstrap was used).",
+    image: '/images/3.png',
+    tags: ['React Native', 'JavaScript', 'Bootstrap'],  
+    source: 'https://github.com/Pekillen/Projects/tree/main/react-native-app',
+    visit: 'https://nativeshowcase.netlify.app/',
+    id: 2,
+  },
   // {
-  //   title: 'Portfolio',
-  //   description: "Building this Portfolio allowed me to revisit and reapply concepts and technics I discovered and learned during preparation of the previous Projects. This is a summury of the work that I have done and a sort of a business-card.",
+  //   title: 'Native App',
+  //   description: "Building React Native App to get acquainted with React Native Technics and deployment of React Native Apps. Working on the App allowed an understanding of how the mobile Native Apps are made. Working on both the Native App and the Showcase site also helped me to get better at styling (for the Showcase Website Bootstrap was used).",
   //   image: '/images/3.png',
-  //   tags: ['React', 'JavaScript', 'CSS'],  
-  //   source: 'https://github.com/Pekillen/Projects/tree/main/portfolio-website',
-  //   visit: 'https://piotrkwiatkowski.netlify.app/',
-  //   id: 2,
+  //   tags: ['React Native', 'JavaScript', 'Bootstrap'],  
+  //   source: 'https://github.com/Pekillen/Projects/tree/main/react-native-app',
+  //   visit: 'https://nativeshowcase.netlify.app/',
+  //   id: 3,
   // }
 ];
 

@@ -28,7 +28,7 @@ export const projects = [
   },
   {
     title: 'Ambion Online Shop',
-    description: "Building an online E-commerce shop to explore Next.js and Sanity technologies and further develop practical web development skills and practical tools. ",
+    description: "Building an online E-commerce shop to explore Next.js and Sanity technologies and further develop practical web development skills and practical tools and libraries available to developers. Since this is an e-commerce project, a payment possibility was implemented with Stripe, to make it possible to make online transactions with card.",
     image: '/images/4.png',
     tags: ['Next.js', 'Sanity', 'Stripe'],  
     source: 'https://github.com/Pekillen/Projects/tree/main/online-shop',

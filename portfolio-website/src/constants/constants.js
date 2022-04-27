@@ -27,12 +27,12 @@ export const projects = [
     id: 2,
   },
   // {
-  //   title: 'Native App',
-  //   description: "Building React Native App to get acquainted with React Native Technics and deployment of React Native Apps. Working on the App allowed an understanding of how the mobile Native Apps are made. Working on both the Native App and the Showcase site also helped me to get better at styling (for the Showcase Website Bootstrap was used).",
-  //   image: '/images/3.png',
-  //   tags: ['React Native', 'JavaScript', 'Bootstrap'],  
-  //   source: 'https://github.com/Pekillen/Projects/tree/main/react-native-app',
-  //   visit: 'https://nativeshowcase.netlify.app/',
+  //   title: 'Ambion Online Shop',
+  //   description: "Building an online E-commerce shop to explore Next.js and Sanity technologies and further develop practical web development skills and practical tools. ",
+  //   image: '/images/4.png',
+  //   tags: ['Next.js', 'Sanity', 'Stripe'],  
+  //   source: 'https://github.com/Pekillen/Projects/tree/main/online-shop',
+  //   visit: 'https://ambion.netlify.app/',
   //   id: 3,
   // }
 ];

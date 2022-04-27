@@ -26,15 +26,15 @@ export const projects = [
     visit: 'https://nativeshowcase.netlify.app/',
     id: 2,
   },
-  // {
-  //   title: 'Ambion Online Shop',
-  //   description: "Building an online E-commerce shop to explore Next.js and Sanity technologies and further develop practical web development skills and practical tools. ",
-  //   image: '/images/4.png',
-  //   tags: ['Next.js', 'Sanity', 'Stripe'],  
-  //   source: 'https://github.com/Pekillen/Projects/tree/main/online-shop',
-  //   visit: 'https://ambion.netlify.app/',
-  //   id: 3,
-  // }
+  {
+    title: 'Ambion Online Shop',
+    description: "Building an online E-commerce shop to explore Next.js and Sanity technologies and further develop practical web development skills and practical tools. ",
+    image: '/images/4.png',
+    tags: ['Next.js', 'Sanity', 'Stripe'],  
+    source: 'https://github.com/Pekillen/Projects/tree/main/online-shop',
+    visit: 'https://ambion.vercel.app/',
+    id: 3,
+  }
 ];
 
 export const TimeLineData = [

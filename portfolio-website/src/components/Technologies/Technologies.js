@@ -27,7 +27,7 @@ const Technologies = () =>  (
           <ListTitle>Back-End</ListTitle>
           <ListParagraph>
             Experience with <br />
-            Node & Express
+            Python & Django
           </ListParagraph>
         </ListContainer>
       </ListItem>

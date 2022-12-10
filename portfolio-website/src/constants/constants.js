@@ -41,12 +41,13 @@ export const TimeLineData = [
   { year: 2017, text: 'First contact with Programming - Programing in Java.', },
   { year: 2018, text: 'Expanding knowledge in IT subjects - using Java and C++ during studies related projects.', }, 
   { year: 2021, text: 'Picking up Java Script and learning WeB Dev in my free time.', },
-  { year: 2022, text: 'Diving into the world of Web Dev, building my first Applications.', },
+  { year: 2022, text: 'Diving into the world of Web Dev, building applications and learning new technologies.', },
+  
 ];
 
 export const data = [
   { tag: 'Dedicated', text: 'Highly Driven & Conciencious'}, 
-  { tag: 'Social', text: 'Builds Strong Rapport with Peers'},  
-  { tag: 'Absorbative', text: 'Is able to grasp new concepts quickly', },
+  { tag: 'Social', text: 'Builds Strong Rapport '},  
+  { tag: 'Absorbative', text: 'Able to grasp new concepts quickly', },
   { tag: 'Creative', text: 'Thinks Outside of the Box'},  
 ];

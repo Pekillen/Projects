@@ -29,4 +29,4 @@ mongoose.connect(process.env.CONNECTION_URL, { useNewUrlParser: true, useUnified
     .catch((error) => console.log(error.message));
    
 
-module.exports = app;
+export default app;

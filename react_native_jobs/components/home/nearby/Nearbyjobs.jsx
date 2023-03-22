@@ -5,7 +5,7 @@ import { View, Text, TouchableOpacity, ActivityIndicator } from "react-native";
 import styles from "./nearbyjobs.style";
 import { COLORS } from "../../../constants";
 import NearbyJobCard from "../../common/cards/nearby/NearbyJobCard";
-import useFetch from "../../../hook/useFetch";
+import useFetch from "../../../hook/useFetchAlt";
 
 const Nearbyjobs = () => {
   const router = useRouter();
@@ -27,7 +27,7 @@ const Nearbyjobs = () => {
         {isLoading ? (
           <ActivityIndicator size='large' color={COLORS.primary} />
         ) : error ? (
-          <Text>Something went wrong</Text>
+          <Text>Whoops! Something went wrong!</Text>
         ) : (
           data?.map((job) => (
             <NearbyJobCard

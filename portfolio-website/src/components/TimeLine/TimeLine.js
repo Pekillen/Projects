@@ -54,7 +54,8 @@ const Timeline = () => {
         My name is Piotr Kwiatkowski. I am living in Sandefjord, Norway. In my free time, I like playing guitar, listening to music, and doing sports. I am always full of positive energy! I am always eager to go the extra mile and learn something new. <br />
         I acquired education in the fields of Mechanical Engineering, Applied Computer Science, and Bussines & Entrepreneurship. I possess comprehensive knowledge and broad experience in a wide range of fields and topics. I have had an opportunity to gain experience working in diverse teams of talented individuals in the fields of engineering, business, and logistics. <br />
         I think that my most valuable qualities are the ability to adapt and learn new subjects quickly and my interpersonal skills, which allow me to build strong, lasting relationships. <br />
-        I am always looking to learn something new and expand my competencies! Please contact me! I would love to get in touch with you to discuss how I would be a great addition to your team! <br />       
+        I am always looking to learn something new and expand my competencies and I am wholeheartedly hoping to get a chance to do that in your team! <br />
+        Please contact me! I would love to get in touch with you! <br />       
       </SectionText>
       <a href='/images/CV.pdf' download="Piotr Kwiatkowski CV.pdf">
         <Button>Download CV</Button>

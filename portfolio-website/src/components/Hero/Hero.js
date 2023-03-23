@@ -12,7 +12,7 @@ const Hero = (props) => (
         My name is Piotr      
       </SectionTitle>
       <SectionText>
-        I created this website to give you a chance to get to know me a little better. I am a young, energetic, and open-minded person who is looking for opportunities to further develop myself. Discover how well we fit together!
+        I am an aspiring programmer with passion for topics of Web Dev and machine learning. I am a young, energetic, and open-minded person who is looking for opportunities to further develop myself. Discover my projects and more about me down below!
       </SectionText>
       <Button onClick={() => window.location = "#about"}>
         Learn More

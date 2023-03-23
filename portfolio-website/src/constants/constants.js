@@ -34,7 +34,25 @@ export const projects = [
     source: 'https://github.com/Pekillen/Projects/tree/main/online-shop',
     visit: 'https://ambion.vercel.app/',
     id: 3,
-  }
+  },
+  {
+    title: 'MERN Yariga',
+    description: `Exploring Refine framework, with the backend based on Node.js, Express & MongoDB. A platform is a CRUD app allowing users to search for B&Bs, browse photos and descriptions, and make reservations directly with the property owners. This allows for a fast and responsive user experience, making it easier for travelers to find and book their ideal B&B!`,
+      image: '/images/5.png',
+      tags: ['Refine', 'Type-Script', 'Express', 'Node'],
+    source: 'https://github.com/Pekillen/Projects/tree/main/refine-dashboard',
+    visit: 'https://memo-yariga.netlify.app/',
+    id: 4,
+  },
+  {
+    title: 'Expo-Finder',
+    description: `Expo-Finder is a mobile app built with React Native and Expo, that allows users to search for job postings, apply for positions, and communicate with potential employers. The app is designed to offer an intuitive and seamless user experience, making it easier for job seekers to find their dream job. Give it a try and discover suitable job openings!`,
+      image: '/images/6.png',
+      tags: ['React Native', 'Expo', 'Java-Script', ],
+    source: 'https://github.com/Pekillen/Projects/tree/main/react_native_jobs',
+    visit: 'https://expo.dev/@pekillen/react_native_jobs?serviceType=classic&distribution=expo-go',
+    id: 5,
+  },
 ];
 
 export const TimeLineData = [
@@ -42,6 +60,7 @@ export const TimeLineData = [
   { year: 2018, text: 'Expanding knowledge in IT subjects - using Java and C++ during studies related projects.', }, 
   { year: 2021, text: 'Picking up Java Script and learning WeB Dev in my free time.', },
   { year: 2022, text: 'Diving into the world of Web Dev, building applications and learning new technologies.', },
+  { year: 2023, text: 'Developing skills in machine learning and building projects using Python.', },
   
 ];
 

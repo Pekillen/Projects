@@ -12,13 +12,13 @@ const Hero = (props) => (
         My name is Piotr      
       </SectionTitle>
       <SectionText>
-        I am an aspiring programmer with passion for topics of Web Dev and machine learning. I am a young, energetic, and open-minded person who is looking for opportunities to further develop myself. Discover my projects and more about me down below!
+        I am an aspiring programmer with a passion for Web Development. I bring a diverse skillset and an unwavering enthusiasm to every project. Check out my portfolio to see what I can do. Let's discuss how I can contribute to your team!
       </SectionText>
       <Button onClick={() => window.location = "#about"}>
         Learn More
       </Button>
     </LeftSection>
-  </Section>    
+  </Section>      
 );
 
 export default Hero;

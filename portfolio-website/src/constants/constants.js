@@ -12,7 +12,7 @@ export const projects = [
     title: 'E-Commerce',
     description:"Building an E-Commerce project to get a hands-on experience and practical skills used in the industry. Exploring React & JavaScript to learn advanced topics, and gain experience precisely where it is recquired. The projects was completed using commerce.js for backend and Stripe for card transactions.",
     image: '/images/2.png',
-    tags: ['React', 'JavaScript', 'Stripe'],
+    tags: ['React', 'MaterialUI', 'Stripe'],
     source: 'https://github.com/Pekillen/Projects/tree/main/e-commerce',
     visit: 'https://hikingshopnet.netlify.app/',
     id: 1,
@@ -39,7 +39,7 @@ export const projects = [
     title: 'MERN Yariga',
     description: `Exploring Refine framework, with the backend based on Node.js, Express & MongoDB. A platform is a CRUD app allowing users to search for B&Bs, browse photos and descriptions, and make reservations directly with the property owners. This allows for a fast and responsive user experience, making it easier for travelers to find and book their ideal B&B!`,
       image: '/images/5.png',
-      tags: ['Refine', 'Type-Script', 'Express', 'Node'],
+      tags: ['Refine', 'TypeScript', 'Express', 'Node'],
     source: 'https://github.com/Pekillen/Projects/tree/main/refine-dashboard',
     visit: 'https://memo-yariga.netlify.app/',
     id: 4,
@@ -48,7 +48,7 @@ export const projects = [
     title: 'Expo-Finder',
     description: `Expo-Finder is a mobile app built with React Native and Expo, that allows users to search for job postings, apply for positions, and communicate with potential employers. The app is designed to offer an intuitive and seamless user experience, making it easier for job seekers to find their dream job. Give it a try and discover suitable job openings!`,
       image: '/images/6.png',
-      tags: ['React Native', 'Expo', 'Java-Script', ],
+      tags: ['React Native', 'Expo', 'JavaScript', ],
     source: 'https://github.com/Pekillen/Projects/tree/main/react_native_jobs',
     visit: 'https://expo.dev/@pekillen/react_native_jobs?serviceType=classic&distribution=expo-go',
     id: 5,
@@ -58,9 +58,10 @@ export const projects = [
 export const TimeLineData = [
   { year: 2017, text: 'First contact with Programming - Programing in Java.', },
   { year: 2018, text: 'Expanding knowledge in IT subjects - using Java and C++ during studies related projects.', }, 
-  { year: 2021, text: 'Picking up Java Script and learning WeB Dev in my free time.', },
-  { year: 2022, text: 'Diving into the world of Web Dev, building applications and learning new technologies.', },
-  { year: 2023, text: 'Developing skills in machine learning and building projects using Python.', },
+  { year: 2020, text: 'Picking up Java Script and learning WeB Dev in my free time.', },
+  { year: 2021, text: 'Diving into the world of Web Dev, building applications and mastering new technologies.', },
+  { year: 2022, text: 'Picking up Python and Django, further expanding my programming knowledge', },
+  { year: 2023, text: 'Developing skills in machine learning and continously learning!', },
   
 ];
 

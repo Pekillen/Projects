@@ -21,7 +21,8 @@ const App = () => {
                     <Route path='/posts/search' element={<Home />} />
                     <Route path='/posts/:id' element={<PostDetails />} />
                     <Route path='/auth' element={!user ? <Auth /> : <Navigate to="/posts" replace />} />
-                    <Route path='/posts/search?searchQuery=none&tags=' element={<Navigate to="/posts" replace />} />                    
+                    <Route path='/posts/search?searchQuery=none&tags=' element={<Navigate to="/posts" replace />} />   
+                    <Route path='*' element={<Home />}/>                  
                 </Routes>
             </Container> 
         </BrowserRouter>       

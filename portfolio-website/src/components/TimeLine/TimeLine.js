@@ -51,11 +51,10 @@ const Timeline = () => {
       <SectionDivider divider />
       <SectionTitle>About Me</SectionTitle>     
       <SectionText>
-        My name is Piotr Kwiatkowski. I am living in Sandefjord, Norway. In my free time, I like playing guitar, listening to music, and doing sports. I am always full of positive energy! I am always eager to go the extra mile and learn something new. <br />
-        I acquired education in the fields of Mechanical Engineering, Applied Computer Science, and Bussines & Entrepreneurship. I possess comprehensive knowledge and broad experience in a wide range of fields and topics. I have had an opportunity to gain experience working in diverse teams of talented individuals in the fields of engineering, business, and logistics. <br />
-        I think that my most valuable qualities are the ability to adapt and learn new subjects quickly and my interpersonal skills, which allow me to build strong, lasting relationships. <br />
-        I am always looking to learn something new and expand my competencies and I am wholeheartedly hoping to get a chance to do that in your team! <br />
-        Please contact me! I would love to get in touch with you! <br />       
+        Greetings! My name is Piotr Kwiatkowski. When I'm not working, I enjoy playing guitar, listening to music, and staying active through sports. With a positive attitude and an eagerness to learn, I'm always ready to go the extra mile to expand my skillset. <br />
+        My educational background includes Mechanical Engineering, Applied Computer Science, and Business & Entrepreneurship, giving me a broad range of knowledge and experience across multiple fields. I've had the privilege of working alongside talented professionals in engineering, business, and logistics, contributing to diverse teams and gaining valuable experience. <br />
+        I pride myself on my ability to quickly adapt and learn new subjects, as well as my strong interpersonal skills that allow me to build lasting relationships. I'm passionate about continuous learning and expanding my competencies, and I'm excited about the opportunity to do so within your team. <br />
+        If you're interested in connecting, please don't hesitate to reach out. I look forward to hearing from you! <br />       
       </SectionText>
       <a href='/images/CV.pdf' download="Piotr Kwiatkowski CV.pdf">
         <Button>Download CV</Button>

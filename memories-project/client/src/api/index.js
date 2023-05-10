@@ -2,8 +2,9 @@ import axios from 'axios';
 
 const API = axios.create({ baseURL: 'https://memories-app-server.onrender.com'})
 
-// const url = 'http://localhost:5000/posts'; //Used during dev.
-// const url = 'https://memories-project-1997.herokuapp.com/posts'; //Old endpoint, deleted.
+// const url = 'http://localhost:5000/posts'; // Used during dev.
+// const url = 'https://memories-project-1997.herokuapp.com/posts'; // Old endpoint, deleted.
+// const url = 'https://memories-app-server.onrender.com; // Current one
 
 API.interceptors.request.use((req) => {
     if(localStorage.getItem('profile')) {
